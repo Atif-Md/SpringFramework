@@ -9,19 +9,19 @@ import org.springframework.stereotype.Component;
 public class SeasonFinder {
 	
 	//field Injection
-//	@Autowired
+	@Autowired
 	private Calendar cal;
 	
 	public SeasonFinder() {
 		System.out.println("SeasonFinder: 0-param constructor");
 	}
 	
-	//setter Injection
-	@Autowired
-	public void setCal(Calendar cal) {
-		System.out.println("SeasonFinder.setCal()");
-		this.cal = cal;
-	}
+//	//setter Injection
+//	@Autowired
+//	public void setCal(Calendar cal) {
+//		System.out.println("SeasonFinder.setCal()");
+//		this.cal = cal;
+//	}
 	
 	//b.method
 	public String getSeason(String user) {
